@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AUCA Gallery</title>
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="Student_form.css" />
+  </head>
+  <body>
+    <div class="overlay">
+      <nav>
+        <div class="logo">
+          <img src="logo.png" alt="Logo" style="width: 70px" />
+        </div>
+        <div class="links">
+          <a href="Home.html">Home</a>
+          <a href="About.html">About</a>
+          <a href="Services.html">Services</a>
+          <a href="Facilities.html">Facilities</a>
+          <a href="Gallery.html">Gallery</a>
+        </div>
+      </nav>
+      <div class="container">
+        <form action="form.php" method="post">
+          <h2>Contact form</h2>
+
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" required />
+
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" required />
+
+          <label class="gender"
+            >Gender:
+            <label
+              ><input type="radio" name="gender" value="male" required />
+              Male</label
+            >
+            <label
+              ><input type="radio" name="gender" value="female" required />
+              Female</label
+            >
+          </label>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone Number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{10}"
+            placeholder="Enter 10-digit phone number"
+            required
+          />
+          <label for="inquiry-type">Inquiry Type:</label>
+          <select id="inquiry-type" name="inquiry-type" required>
+            <option value="" disabled selected>Select an Inquiry Type</option>
+            <option value="general">General Inquiry</option>
+            <option value="admissions">Admissions</option>
+            <option value="academic">Academic Support</option>
+            <!-- Add more options based on your needs -->
+          </select>
+          <label for="comment">Comments:</label>
+          <textarea id="comment" name="comment" rows="4"></textarea>
+
+          <button type="submit">Register</button>
+        </form>
+      </div>
+      <footer>
+        &copy; AUCASA
+        <div class="quick-links">
+          <a href="Alumni.html">Alumni</a>
+          <a href="Parents.html">Parents</a>
+          <a href="Faculty.html">Faculty</a>
+          <a href="Campuses.html">Campuses</a>
+          <a href="StudentInfoLogin.html">Student Info Login</a>
+          <a href="FormerAddress.html">Former Address</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

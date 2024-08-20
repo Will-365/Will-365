@@ -1,0 +1,9 @@
+body {
+  background-color: blue;
+  background-size: cover;
+}
+.container {
+  font-style: italic;
+  font-weight: bold;
+  color: whitesmoke;
+}

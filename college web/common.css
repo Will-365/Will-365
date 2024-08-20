@@ -1,0 +1,48 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+}
+nav {
+  background-color: #333;
+  height: 60px;
+  gap: 350px;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.links {
+  display: inline;
+  float: right;
+}
+.links a {
+  margin-right: 50px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+.links a::after {
+  content: "\2BC6";
+  margin-left: 5px;
+}
+.links a:hover {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  color: #333;
+}
+
+.container {
+  padding: 20px;
+  margin: 50px 30px;
+}
+footer {
+  background-color: #111124;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 16px;
+}

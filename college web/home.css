@@ -1,0 +1,22 @@
+body {
+  background-image: url("auca_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.overlay {
+  background-color: rgba(76, 76, 189, 0.568);
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 50px 30px;
+  text-align: center;
+  width: 700px;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
